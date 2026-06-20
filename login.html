@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentFlow AI - Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="brand-panel" aria-label="TalentFlow AI overview">
+      <a class="brand" href="login.html" aria-label="TalentFlow AI login">
+        <span class="brand-mark">TF</span>
+        <span>
+          <strong>TalentFlow AI</strong>
+          <small>Smart HR Management</small>
+        </span>
+      </a>
+
+      <div class="brand-copy">
+        <p class="eyebrow">Secure HR workspace</p>
+        <h1>One portal for smarter people operations.</h1>
+        <p>Sign in to manage attendance, leave, payroll, recruitment, performance, learning, and AI-powered HR insights.</p>
+      </div>
+
+      <div class="insight-card">
+        <div>
+          <span class="signal"></span>
+          <strong>AI workforce briefing</strong>
+        </div>
+        <p>Attrition, payroll exceptions, attendance patterns, and candidate fit summaries are ready after login.</p>
+      </div>
+
+      <div class="stats-row">
+        <span><strong>120</strong> Employees</span>
+        <span><strong>92%</strong> Attendance</span>
+        <span><strong>8%</strong> Risk</span>
+      </div>
+    </section>
+
+    <section class="login-panel" aria-label="Login form">
+      <div class="login-card">
+        <div class="login-header">
+          <h2>Welcome back</h2>
+          <p>Use your TalentFlow AI credentials to continue.</p>
+        </div>
+
+        <form id="loginForm">
+          <fieldset class="role-picker">
+            <legend>Login as</legend>
+            <label>
+              <input type="radio" name="role" value="admin" required>
+              <span>Admin</span>
+            </label>
+            <label>
+              <input type="radio" name="role" value="employee" required>
+              <span>Employee</span>
+            </label>
+          </fieldset>
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" autocomplete="username" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" autocomplete="current-password" required>
+
+          <div class="form-options">
+            <label class="remember">
+              <input type="checkbox" name="remember">
+              <span>Remember me</span>
+            </label>
+            <a href="#support">Need help?</a>
+          </div>
+
+          <button type="submit">Sign In</button>
+        </form>
+
+        <div id="error-message" role="alert" aria-live="polite"></div>
+
+        <p class="security-note">Protected access for authorized HR administrators and employees.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
